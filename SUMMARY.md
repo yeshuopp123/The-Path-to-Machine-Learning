@@ -24,5 +24,6 @@
 
 * 综述
 * [Tensorflow](ji-qi-xue-xi-shi-jian/tensorflow.md)
+  * [常用API](ji-qi-xue-xi-shi-jian/tensorflow/chang-yong-api.md)
 * Sklearn
 
