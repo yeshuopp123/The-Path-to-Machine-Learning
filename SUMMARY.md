@@ -13,7 +13,7 @@
 
 * [线性模型](ji-qi-xue-xi-suan-fa/xian-xing-mo-xing.md)
 * [决策树](ji-qi-xue-xi-suan-fa/jue-ce-shu.md)
-* 感知机
+* [感知机](ji-qi-xue-xi-suan-fa/gan-zhi-ji.md)
 * 神经网络
 * [支持向量机](ji-qi-xue-xi-suan-fa/zhi-chi-xiang-liang-ji.md)
 * [条件随机场](ji-qi-xue-xi-suan-fa/tiao-jian-sui-ji-chang.md)
