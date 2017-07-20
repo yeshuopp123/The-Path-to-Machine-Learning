@@ -1,4 +1,4 @@
-# The Path to Machine Learning
+# [The Path to Machine Learning](https://chybeta.gitbooks.io/the-path-to-machine-learning/content/)
 
 记录自己在机器学习道路上的一些体会。
 
