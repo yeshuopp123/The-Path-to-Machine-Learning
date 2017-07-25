@@ -38,11 +38,10 @@ def readData(filepath):
 	file = pd.read_table(filepath,header=None,sep=' ')
 	return file
 
-# 计算欧几里得距离
 def distance(vec1,vec2):
 	return np.sqrt(sum(np.power((vec1-vec2).tolist(),2)))
 
-# 计算特征X与各质心的距离，按最小距离原则找到点X对应的类,此处距离为欧式距离
+
 def findClass(dataSetloc,centerSet):
 	disitoZ = []
 	for j in range(len(centerSet)):
@@ -50,7 +49,7 @@ def findClass(dataSetloc,centerSet):
 	print(disitoZ)
 	return(disitoZ.index(min(disitoZ)))
 
-# 用于计算调整后各类的中心
+
 def adjustCenter(centerSet,classNumber):
 	tempCenter=[]
 	for i in range(classNumber):
@@ -71,7 +70,7 @@ def isequal(class1,class2):
 
 pdDataSet = readData('dataset.txt')
 
-# 题目所给初始条件s
+
 
 k = int(input("输入类别数目:\n"))
 center = []
@@ -87,37 +86,13 @@ for i in range(k):
 print('初始中心如下：')
 print(center)
 
-# 用于判断结束条件
+
 judgeValue = 1
 
-# 用于记录迭代次数
+
 global iterations
 iterations = 0
 
-while judgeValue :
-	# centerCopy保存center的初始值，用于结束判断
-	print("----------------------------------------")
-	iterations += 1
-	classLabelCopy = cp.deepcopy(classLabel)
-	print("第",iterations,"次循环")
-	classSet = [[],[],[]]
-	classLabel = [[],[],[]]
-	print("--------计算每个点到各类中心的距离--------")
-	for i in range(len(pdDataSet)):
-		Xindex = findClass(pdDataSet.loc[i],center)
-		classSet[Xindex].append(pdDataSet.loc[i].tolist())
-		classLabel[Xindex].append(i)
-	print("----------当前各类中心位置----------")
-	center = adjustCenter(classSet,k)
-	for i in range(k):
-		print("第",i+1,"类中心位置为",center[i])
-	print("----------当前分类结果(数据)----------")
-	print(classSet)
-	print("----------当前分类结果（对应索引）----------")
-	print(classLabel)
-	# 若类别中的点不再变化，则退出循环
-	if isequal(classLabel,classLabelCopy):
-		judgeValue = 0
 ```
 
 dataset.txt内容：
