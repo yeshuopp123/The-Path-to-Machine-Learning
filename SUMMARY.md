@@ -11,6 +11,7 @@
 
 ## 机器学习算法
 
+* [最近邻](ji-qi-xue-xi-suan-fa/zui-jin-lin.md)
 * [线性模型](ji-qi-xue-xi-suan-fa/xian-xing-mo-xing.md)
 * [决策树](ji-qi-xue-xi-suan-fa/jue-ce-shu.md)
 * [感知机](ji-qi-xue-xi-suan-fa/gan-zhi-ji.md)
@@ -25,5 +26,5 @@
 * 综述
 * [Tensorflow](ji-qi-xue-xi-shi-jian/tensorflow.md)
   * [常用API](ji-qi-xue-xi-shi-jian/tensorflow/chang-yong-api.md)
-* Sklearn
+* [Sklearn](ji-qi-xue-xi-shi-jian/sklearn.md)
 
